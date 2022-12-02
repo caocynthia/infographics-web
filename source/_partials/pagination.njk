@@ -1,0 +1,27 @@
+<div class="footer">
+    <div class="inner">
+        <div class="pagination">
+            {% set previousPost = collections.posts | getPreviousCollectionItem(page) %}
+            {% set nextPost = collections.posts | getNextCollectionItem(page) %}
+            <div class="pagination_prev">
+            {% if previousPost %}
+                PREVIOUS:
+                <a class="thumb" href="{{previousPost.url}}">
+                    <img src="/images/{{previousPost.data.handle}}_thumb.jpg" alt="{{previousPost.data.title}}">
+                    <div class="thumb_title">{{previousPost.data.title}}</div>
+                </a>
+            {% endif %}
+            </div>
+            <div class="pagination_next">
+            {% if nextPost %}
+                NEXT:
+                <a class="thumb" href="{{nextPost.url}}">
+                    <img src="/images/{{nextPost.data.handle}}_thumb.jpg" alt="{{nextPost.data.title}}">
+                    <div class="thumb_title">{{nextPost.data.title}}</div>
+                </a>
+            {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
