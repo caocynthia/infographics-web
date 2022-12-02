@@ -11,7 +11,6 @@ layout: "infographic.njk"
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>W.E.B, DuBois: City and Rural Population, 1890</title>
-<link rel="stylesheet" href="/styles/common.css" />
 <style>
 /* custom css styles go here */
 </style>
@@ -19,7 +18,8 @@ layout: "infographic.njk"
 <body>
 <main class="main">
   <div class="inner">
-    <img src="/images/{{handle}}.jpg" alt="{{title}}">
+    {% set url = ["/images/", handle,".jpg"] | join %}
+    <img src="{{ url | url}}" alt="{{title}}">
   </div>
 </main>
 <footer class="footer">
