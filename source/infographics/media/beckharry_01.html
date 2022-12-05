@@ -19,7 +19,8 @@ layout: "infographic.njk"
 <body>
 <main class="main">
   <div class="inner">
-    <img src="/images/{{handle}}.jpg" alt="{{title}}">
+    {% set url = ["/images/", handle,".jpg"] | join %}
+    <img src="{{ url | url }}" alt="{{ title }}">
   </di>
 </main>
 <footer class="footer">
