@@ -19,7 +19,7 @@ layout: "infographic.njk"
 <main class="main">
   <div class="inner">
     {% set url = ["/images/", handle,".jpg"] | join %}
-    <img src="{{ url | url}}" alt="{{title}}">
+    <img src="{{ url | url }}" alt="{{ title }}">
   </div>
 </main>
 <footer class="footer">
@@ -27,7 +27,6 @@ layout: "infographic.njk"
     <p>Footer</p>
   </div>
 </footer>
-<script src="/scripts/foo.js"></script>
 <script>
 // custom javascript goes here
 </script>

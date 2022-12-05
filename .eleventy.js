@@ -1,4 +1,5 @@
 module.exports = function (eleventyConfig) {
+  // copy these files without processing them
   eleventyConfig.addPassthroughCopy("./source/images/");
   eleventyConfig.addPassthroughCopy("./source/styles/");
   eleventyConfig.addPassthroughCopy("./source/scripts/");
@@ -28,6 +29,7 @@ module.exports = function (eleventyConfig) {
     return collectionApi.getFilteredByGlob("**/infographics/**/*");
   });
 
+  // return the configuration object
   return {
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: "njk",
