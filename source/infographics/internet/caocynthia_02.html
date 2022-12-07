@@ -31,9 +31,12 @@ body {
 <body>
 <main class="main">
   <div class="inner" style="font-size:0;">
-    <div class="covid-marker"><img src="images/2x/COVIDMarker.svg" alt="There is a timeline with a marker pointing to 2020 indicating the COVID pandemic."></div>
+    <div class="covid-marker">
+      {% set url = ["/images/", handle,".png"] | join %}
+      <img src="{{ "/images/caocynthia_02_COVIDmarker.png" | url}}" alt="There is a timeline with a marker pointing to 2020 indicating the COVID pandemic."></div>
     <!-- 3. Put a description of your infographic in the alt tag -->
-    <img class="part-1" src="images/2x/P2-top.svg" alt="
+    {% set url = ["/images/", handle,".png"] | join %}
+    <img src="{{ " /images/caocynthia_02_top.png" | url}}" alt="
     Is Print Media Dying Out?
     Print media is defined broadly as any written or pictorial form of communication produced mechanically or electronically using printing, photocopying, or digital methods from which multiple copies can be made through automated processes.
 
@@ -44,7 +47,8 @@ body {
     The second most common is Unsure at just under a quarter. 
     Next is Indifferent, followed by Anxious, Happy, Overwhelmed, and Relieved.
     " width="1366"
-    ><img class="part-2" src="images/2x/P2-rest.svg" alt="
+    >{% set url = ["/images/", handle,".png"] | join %}
+    <img src="{{ " /images/caocynthia_02_rest.png" | url}}" alt="
     The Average time Americans spend on different media from 2011 to 2021: (2019, 2020, and 2021 are estimate amounts.)
     
     Less time is spent each day on traditional forms of media, such as television and newspapers, while time spent consuming mobile media is witnessing the most growth.
