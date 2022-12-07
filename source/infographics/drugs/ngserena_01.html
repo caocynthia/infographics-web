@@ -1,0 +1,52 @@
+---
+designer: "Serena Ng"
+title: "Coffee Spending in 2022 Quickly Surpasses Pre-Pandemic Spending in America"
+handle: "ngserena_01"
+layout: "infographic.njk"
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{{title}}</title>
+<link rel="stylesheet" href="/styles/common.css" />
+<style>
+/* custom css styles go here */
+.inner {
+  padding: 0px;
+}
+.mainImg {
+  min-width: 1366px;
+  width: 100%;
+}
+</style>
+</head>
+<body>
+<main class="main">
+  <div>
+    {% set url = ["/images/", handle,".png"] | join %}
+    <img class="mainImg" src="{{ url | url }}" alt="Coffee Consumption is Extremely Wasteful, but it doesn't have to be. Infographic" width="1425"> 
+  </div>
+</main>
+<footer class="footer">
+  <div class="inner">
+    <p><strong>Designer:</strong> Serena Ng</p>
+    <p><strong>Sources:</strong></p>
+    <!-- 5. Update your sources -->
+    <ul class="sources">
+      <li class="source_link"><a href="https://www-statista-com.ezproxy.neu.edu/study/48823/coffee-report/">Statistica. Consumer Market Outlook Reports. 2022.</a></li>
+      <li class="source_link"><a href="https://www-statista-com.ezproxy.neu.edu/statistics/323442/single-cup-brewing-system-us-consumers-likeliness-to-purchase/">The National Coffee Association. Share of U.S. consumers who are likely to purchase a single-cup coffee brewing system for their home. 2020.</a></li>
+      <li class="source_link"><a href="https://www-statista-com.ezproxy.neu.edu/statistics/1327808/preferred-coffee-brewing-methods-in-the-us/">Drive Research. What method of brewing/making coffee do you prefer? 2022.</a></li>
+      <li class="source_link"><a href="https://thenounproject.com/">The Noun Project. 2022.</a></li>
+      <li class="source_link"><a href="https://www.nespresso.com/us/en/">Nespresso. Reduce, Reuse, Regenerate. 2022.</a></li>
+      <li class="source_link"><a href="https://www.nestle.com/">Nestle. Sustainability. 2022.</a></li>
+    </ul>
+  </div>
+</footer>
+<script>
+// custom javascript goes here
+</script>
+</body>
+</html>
