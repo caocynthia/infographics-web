@@ -82,7 +82,7 @@ In cases where a designer has multiple assets, I recommend appending descriptive
 
 ## How this works
 
-In a nutshell, 11ty processes all the HTML files in the infographics directories and wraps them in a parent template which includes the navigation and pagination. The navigation is build from the YAML metadata you add to each file. 
+In a nutshell, eleventy processes all the HTML files in the infographics directories and wraps them in a parent template which includes the navigation and pagination. The navigation is build from the YAML metadata you add to each file. 
 
 ### YAML metadata header
 
