@@ -17,7 +17,7 @@ This site is built using the [eleventy (11ty)](https://github.com/11ty/eleventy)
 
 #### Set up
 
-1. check out the git repository
+1. check out the dev branch of the git repository
 2. set your terminal to the project directory `cd Consumption`
 3. install dependencies `npm i`
 4. start the local server `npm start`. This will start a local server on [localhost:8080](http://localhost:8080)
