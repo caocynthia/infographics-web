@@ -1,6 +1,8 @@
 # ARTG3451 FA22 Information Design 01 Research Project Website
 
-This is the website compiling the semester-long research project of Todd Linkner's Fall 2022 Information Design 01 class. Over the semester, we used our studio projects to investigate the topic of consumption. We must consume to live; we need air, water, food, and energy. We also consume for other reasons, such as pleasure or status. In the first project, students explained aspects of consumption through illustrations and diagrams. In the second project, students developed data stories using visualization and diagramming to show the extent and impact of consumption.
+This is the website compiling the semester-long research project of Todd Linkner's Fall 2022 Information Design 01 class. Over the semester, we used our studio projects to investigate the topic of consumption. We must consume to live; we need air, water, food, and energy. We also consume for other reasons, such as pleasure or status. 
+
+In the first project, students explained aspects of consumption through illustrations and diagrams. In the second project, students developed data stories using visualization and diagramming to show the extent and impact of consumption.
 
 You can find the live site at [nu-info-desgin.github.io/Consumption/](https://nu-info-desgin.github.io/Consumption/).
 
