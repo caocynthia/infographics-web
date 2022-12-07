@@ -1,3 +1,9 @@
+---
+designer: "Owen McLaughlin"
+title: "The Growth and Popularity of a Music Streaming Giant"
+handle: "mclaughlin_02"
+layout: "infographic.njk"
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +11,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <!-- 1. Put the title of your infographic here -->
-<title>Spotify: The Growth and Popularity of a Music Streaming Giant</title>
+<title>{{title}}</title>
 <link rel="stylesheet" href="lib/common.css" />
 <style>
 /* 2. Update your background, if needed */
@@ -13,12 +19,13 @@ body {
     background-color: #ffffff; /* or use: rgb(0,255,0) */
 }
 </style>
+
 </head>
 <body>
 <main class="main">
   <div class="inner">
     <!-- 3. Put a description of your infographic in the alt tag -->
-    <img src="images/mclaughlin_02.png" alt="Spotify: The Growth and Popularity of a Music Streaming Giant" width="1366">
+    <img src="{{'/images/mclaughlin_02.png'|url}}" alt="Spotify: The Growth and Popularity of a Music Streaming Giant" width="1366">
   </div>
 </main>
 <footer class="footer">
