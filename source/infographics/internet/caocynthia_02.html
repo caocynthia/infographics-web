@@ -1,0 +1,159 @@
+---
+designer: "Cynthia Cao"
+title: "Is Print Media Dying Out?"
+handle: "caocynthia_02"
+layout: "infographic.njk"
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- 1. Put the title of your infographic here -->
+<title>Is Print Media Dying Out?</title>
+<link rel="stylesheet" href="lib/common.css" />
+<style>
+/* 2. Update your background, if needed */
+body {
+    background-color: #ffffff; /* or use: rgb(0,255,0) */
+}
+
+.covid-marker {
+  position: fixed;
+  width: 12%;
+  top: 120px;
+  left: 1176px;
+  opacity: 0%;
+}
+</style>
+</head>
+
+<body>
+<main class="main">
+  <div class="inner" style="font-size:0;">
+    <div class="covid-marker">
+      {% set url = ["/images/", handle,".png"] | join %}
+      <img src="{{ "/images/caocynthia_02_COVIDmarker.png" | url}}" alt="There is a timeline with a marker pointing to 2020 indicating the COVID pandemic."></div>
+    <!-- 3. Put a description of your infographic in the alt tag -->
+    {% set url = ["/images/", handle,".png"] | join %}
+    <img src="{{ " /images/caocynthia_02_top.png" | url}}" class="part-1" alt="
+    Is Print Media Dying Out?
+    Print media is defined broadly as any written or pictorial form of communication produced mechanically or electronically using printing, photocopying, or digital methods from which multiple copies can be made through automated processes.
+
+    Specific examples incude books, journals, magazines, newspapers, pamphlets, and periodicals.
+
+    The Attitudes of U.S. adults towards the extinction of print media are represented in a donut chart. 
+    The most common response at a little under half is Sad.
+    The second most common is Unsure at just under a quarter. 
+    Next is Indifferent, followed by Anxious, Happy, Overwhelmed, and Relieved.
+    " width="1366"
+    >{% set url = ["/images/", handle,".png"] | join %}
+    <img src="{{ " /images/caocynthia_02_rest.png" | url}}" class="part-2" alt="
+    The Average time Americans spend on different media from 2011 to 2021: (2019, 2020, and 2021 are estimate amounts.)
+    
+    Less time is spent each day on traditional forms of media, such as television and newspapers, while time spent consuming mobile media is witnessing the most growth.
+
+    Newspaper publishing revenue in the U.S. from 2010 to 2020:
+    Print newspaper revenue has been on the decline in the past decade while digital revenue has been steadily increasing instead.
+
+    Percent change of magazine readership in the U.S. from 2012 to 2020:
+    Unlike newspapers, magazine readership has remained fairly stable in the 2010s, which the exception of the COVID-19 pandemic causing readership to fall 3.41 percent from the previous year.
+    2012: 210.7 million readers
+    2013: +1.57%, 214.1 million readers
+    2014: +0.75%, 215.7 million readers
+    2015: +0.37%, 216.5 million readers
+    2016: +2.49%, 221.9 million readers
+    2017: +1.49%, 225.2 million readers
+    2018: -0.27%, 224.6 million readers
+    2019: +1.83%, 228.7 million readers
+    2020: -3.41%, 221.9 million readers
+
+    Percent change of print book sales in the U.S. from 2011 to 2021:
+    Although print book sales saw a dramatic decrease in the early 2010s, the 2020s are beginning with an sharpspike in the opposite direction, showing a sharp increase in sales in 2020. 
+    2010: 718 sales in millions of units
+    2011: -9.33%, 651 million sales
+    2012: -9.22%, 591 million sales
+    2013: +4.91%, 620 million sales
+    2014: +2.42%, 635 million sales
+    2015: +2.83%, 653 million sales
+    2016: +3.22%, 674 million sales
+    2017: +1.91%, 686.9 million sales
+    2018: +1.67%, 698.4 million sales
+    2019: -0.67%, 693.71 million sales
+    2020: +9.26%, 757.94 million sales
+    2021: +8.95%, 825.75 million sales
+
+    Comics sales revenue in North America from 2013 to 2021:
+    Comic sales had been growing steadily before hitting an unprecedented high point of $1.905 billion in 2021, heavily contrasting print newspaper in the last few years.
+
+    Is Print Media Dying Out?
+    While consumption of print newspaper has been in decline, other forms of print media are continuing to thrive despite the increased availability of digital media. 
+    Magazine readership remained steady pre-pandemic while print book and comic book sales have seen significant growth in recent years.
+    " width="1366">
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="inner">
+    <!-- 4. Update your design credit -->
+    <p><strong>Designer:</strong> Cynthia Cao</p>
+    <p><strong>Sources:</strong></p>
+    <!-- 5. Update your sources -->
+    <ul class="sources">
+      <li class="source_link"><a target=”_blank” href="https://www.oxfordreference.com/view/10.1093/oi/authority.20110803100346392">
+        Oxford Reference. print media definition. 2022</a></li>
+      <li class="source_link"><a target=”_blank” href="https://www.statista.com/statistics/973062/extinction-of-print-media-attitudes-us/">
+        Statista. Attitudes towards the the extinction of printed media among adults in the United States as of November 2018. 2019
+      </a></li>
+      <li class="source_link"><a target=”_blank” href="https://www.vox.com/recode/2020/1/6/21048116/tech-companies-time-well-spent-mobile-phone-usage-data\">
+        Vox. Average time spent per user each day in the US. 2020</a></li>
+      <li class="source_link"><a target=”_blank” href="https://www.statista.com/statistics/184887/us-newspaper-publishing-revenue-by-media-type-since-2005/">
+        Statista. Newspaper publishing revenue in the United States from 2010 to 2020, by media type. 2021</a></li>
+      <li class="source_link"><a target=”_blank” href="https://www.statista.com/statistics/207850/total-gross-magazine-audience-in-the-united-states/">
+        Statista. Number of magazine readers in the United States from 2012 to 2020. 2021</a></li>
+      <li class="source_link"><a target=”_blank” href="https://www.statista.com/statistics/422595/print-book-sales-usa/">
+        Statista. Unit sales of printed books in the United States from 2004 to 2021. 2022</a></li>
+      <li class="source_link"><a target=”_blank” href="https://www.statista.com/statistics/369062/comics-revenue-print-digital/">
+        Statista. Comics and graphic novel sales revenue in North America from 2013 to 2021, by format. 2022</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+  integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"
+  integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- <script src="lib/gsap.min.js"></script>
+<script src="lib/ScrollTrigger.min.js"></script> -->
+<script>
+// 6. Put custom javascript here, if needed
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.to(".covid-marker", {
+    opacity: 1,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".part-1",
+      start: "bottom-=95px 105px",
+      end: "bottom-=90px top",
+      scrub: true,
+      markers: true,
+    },
+  });
+  gsap.to('.covid-marker', {
+      opacity: 0,
+      ease: 'none',
+      scrollTrigger: {
+        trigger: '.main',
+        start: 'bottom-=500px bottom-=400px',
+        end: 'bottom-=580px top',
+        scrub: true,
+        markers: true
+      }
+    });
+</script>
+</body>
+</html>
