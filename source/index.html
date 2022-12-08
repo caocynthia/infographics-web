@@ -1,5 +1,5 @@
 ---
-title: "This is our site about consumption!"
+title: "Consumption"
 layout: "home.njk"
 ---
 <!DOCTYPE html>
@@ -11,14 +11,194 @@ layout: "home.njk"
     <title>{{title}}</title>
     <link rel="stylesheet" href="/styles/common.css" />
     <style>
-      /* custom css styles go here */
+      
+
+.toon{
+  padding: 10;
+  text-align: center;
+  font-size: 8em;
+  word-wrap: break-word;
+  padding-top: 40;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}body{
+  background-color: rgb(225, 225, 225);
+}
+h5{
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 5em;
+}
+p{
+  padding-bottom: 2.5em;
+  line-height: 1.2em;
+  font-weight: 300;
+  padding-left: 4em;
+  padding-right: 4em;
+}
+.home {
+  margin: 0;
+  padding: 10;
+  list-style: none;
+  display: grid;
+  flex-direction: column;
+}
+.home_link {
+height: fit-content;
+padding-bottom: 1.25em;
+display: block;
+overflow: visible;
+grid-row: 1;
+padding-left: 3.75em;
+}
+.home_link .subhome {
+  grid-row: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.home_link_title {
+  font-size: 1.25em;
+  font-weight: 600;
+  line-height: 1.5em;
+  margin-left: .25em;
+  padding: 0 .5em;
+}
+
+.home_link_subhome {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 10;
+  padding-top: 5;
+  list-style: none;
+  color: inherit;
+  background: inherit;
+  block-size:auto;
+  height: fit-content;
+  flex-direction: row;
+}
+.subhome_link {
+  margin: 0.5em;
+  margin-top: 0.2em;
+  outline: none;
+  display: block;
+  height: fit-content;
+}
+.subhome_link:hover {
+  background-color:  rgb(210, 210, 210);
+}
+.thumb_title{
+  padding-top: .25em;
+}
+
+.subhome_link a {
+  display: block;
+  width: 300px;
+  padding: 0.5em;
+  color: inherit;
+  text-decoration: none;
+}
+.box{
+  height: fit-content;
+}
+.subhome_link_title {
+  padding-top: 0.75em;
+}
+
     </style>
   </head>
   <body>
     <main class="main">
       <div class="inner">
+        <h1 class="toon">{{title}}</h1>
         {{pages.default | log}} 
+        <h5>Information Design. Fall 2022</h5>
+        <p>Consumption is a word that encompasses a broad range of actions including eating, drinking, buying, and using. What can be consumed is an even more numerous list. 
 
+          This virtual exhibit covers the topic of consumption from several angles and perspectives by looking at data of specific items, products, or services and bringing out the story buried within raw numbers and facts. To narrow down the broad topic of consumption, this exhibit’s topics fall under three main categories: Food/Drink/Drugs, Media, and Money.
+          
+          From these three areas of consumption, the exhibit presents meaningful information on subjects ranging from organic produce to the cost of college to even ease of consumption reflected in leisure. Data visualizations and designs of subjects give clarity to raw data and large numbers that would otherwise be hard to understand and compare. Pairing the data visualizations with additional information further explains the data and provides insight into both our individual behavior as consumers and the trends of our society.
+          
+          Our consumption is influenced by where we live, the era that we live in, our internet usage, our household income, and far more factors within and beyond our control. Through this exhibit, we aim to display patterns, changes, and outstanding circumstances discovered in our exploration of consumption.
+          </p>
+        <div class="home">
+          <div class="box">
+          <div class="home_link">
+            <div>
+              <div class="home_link_title">Internet</div>
+              <div class="subhome">
+                  {% for post in collections.internet %}
+                      <div class="subhome_link">
+                          {% include "thumb.njk" %}
+                      </div>
+                  {% endfor %}
+                    </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="home_link">
+              <div class="home_link_title">Media</div>
+              <div class="subhome">
+                  {% for post in collections.media %}
+                      <div class="subhome_link">
+                          {% include "thumb.njk" %}
+                      </div>
+                  {% endfor %}
+                    </div>
+                  </div>
+        </div>
+          <div class="box">
+          <div class="home_link">
+              <div class="home_link_title">Entertainment</div>
+              <div class="subhome">
+                  {% for post in collections.entertainment %}
+                      <div class="subhome_link">
+                          {% include "thumb.njk" %}
+                      </div>
+                  {% endfor %}
+                    </div>
+            </div>
+        </div>
+          <div class="box">
+          <div class="home_link">
+              <div class="home_link_title">Fashion</div>
+              <div class="subhome">
+                  {% for post in collections.fashion %}
+                      <div class="subhome_link">
+                          {% include "thumb.njk" %}
+                      </div>
+                  {% endfor %}
+                    </div>
+                  </div>
+        </div>
+          <div class="box">
+          <div class="home_link">
+              <div class="home_link_title">Food</div>
+              <div class="subhome">
+                  {% for post in collections.food %}
+                      <div class="subhome_link">
+                          {% include "thumb.njk" %}
+                      </div>
+                  {% endfor %}
+                    </div>
+          </div>
+        </div>
+          <div class="box">
+          <div class="home_link">
+              <div class="home_link_title">Drugs</div>
+              <div class="subhome">
+                  {% for post in collections.drugs %}
+                      <div class="subhome_link">
+                          {% include "thumb.njk" %}
+                      </div>
+                  {% endfor %}
+                    </div>
+                  </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>
