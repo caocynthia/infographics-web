@@ -11,9 +11,12 @@
                     <div class="nav_link_title">Internet</div>
                     <ul class="subnav">
                         {% for post in collections.internet %}
+                            {% if post.data.unlisted != true %}
                             <li class="subnav_link">
                                 {% include "thumb.njk" %}
                             </li>
+                            {% endif %}
+                            
                         {% endfor %}
                     </ul>
                 </li>
