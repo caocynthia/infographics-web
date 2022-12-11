@@ -1,7 +1,7 @@
 ---
 designer: "Serena Li"
 title: "The Effects of Diet Culture"
-handle: "LiSerena_01"
+handle: "liserena_01"
 layout: "infographic.njk"
 ---
 <!DOCTYPE html>
@@ -12,11 +12,16 @@ layout: "infographic.njk"
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>The Effects of Diet Culture</title>
-<link rel="stylesheet" href="lib/common.css">
+<link rel="stylesheet" href="/styles/common.css" />
 <style>
 
 body {
     background-color: rgb(255, 255, 255);
+}
+
+#box img {
+  width: auto;
+
 }
 
 #scrollBox {
@@ -76,8 +81,8 @@ body {
   </div>
 </footer>
 
-<script src="{{'/scripts/gsap.min.js'|url}}"></script>
-<script src="{{'/scripts/ScrollTrigger.min.js'|url}}"></script>
+<script src="{{ '/scripts/gsap.min.js' | url }}"></script>
+<script src="{{ '/scripts/ScrollTrigger.min.js' | url }}"></script>
 <script>
 
 
@@ -85,7 +90,7 @@ gsap.to("#box", // element to animate
   {
     x: -2050, // move the element 400px to the right
     scrollTrigger: {
-      trigger: "scrollBox", // element to trigger the animation
+      trigger: "#scrollBox", // element to trigger the animation
       scrub: true, // control animaiton with the scrollbar
       pin: true, // fix position while animating
       start: '600px top', // animate when the top of the trigger hits the top of the viewport

@@ -491,7 +491,7 @@ layout: "infographic.njk"
     {% set url = ["/images/", handle,".png"] | join %}
     <div padding="0px 0px">
       <!-- 3. Put a description of your infographic in the alt tag (width = 1366) -->
-      <img src="{{"/images/ngserena_02_start.png" | url}}" alt="Is College Worth it in the Long Run? Infographic" width="1425" z-index="2"> 
+      <img src="{{'/images/ngserena_02_start.png' | url}}" alt="Is College Worth it in the Long Run? Infographic" width="1425" z-index="2"> 
     </div>
   
     <!-- Bad Selection Box -->
@@ -513,7 +513,7 @@ layout: "infographic.njk"
     </a>
   </div>
 </main>
-{% include "./page-foot.njk" %}
+{% include "ngserena_02_page-foot.njk" %}
 <script>
 // custom javascript goes here
 </script>
