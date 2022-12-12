@@ -30,14 +30,23 @@ layout: "infographic.njk"
     <main class="main">
       <div class="inner" style="font-size: 0">
         <div class="covid-marker">
-          {% set url = ["/images/", handle,".png"] | join %} <img src="{{
-          "/images/caocynthia_02_COVIDmarker.png" | url}}" alt="{{title}}">
+          <img
+            src="{{ '/images/caocynthia_02_covid_marker.png' | url }}"
+            alt="{{title}}"
+          />
         </div>
-        {% set url = ["/images/", handle,".png"] | join %} <img src="{{ "
-        /images/caocynthia_02_top.png" | url}}" class="part-1" alt="{title}}"
-        width="1366" >{% set url = ["/images/", handle,".png"] | join %} <img
-        src="{{ " /images/caocynthia_02_rest.png" | url}}" class="part-2"
-        alt="{{title}}" width="1366">
+        <img
+          src="{{ '/images/caocynthia_02_top.png' | url}}"
+          class="part-1"
+          alt="{title}}"
+          width="1366"
+        />
+        <img
+          src="{{ '/images/caocynthia_02_rest.png' | url}}"
+          class="part-2"
+          alt="{{title}}"
+          width="1366"
+        />
       </div>
     </main>
     <footer class="footer">
