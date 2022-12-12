@@ -159,9 +159,24 @@ body {
   width: 100%;
   flex-direction: row;
   justify-content: space-between;
+  padding: 0 10px;
 }
-.pagination_prev{}
-.pagination_next{}
+.pagination .arrow {
+  font-size: 2em;
+  padding: 0 0.5rem;
+}
+.pagination_prev {
+  text-align: left;
+}
+.pagination_next{
+  text-align: right;
+}
+
+.pagination .pagination_prev:hover,
+.pagination .pagination_next:hover {
+  background-color: #47455c;
+}
+
 
 /* browser-warning*/
 @media (max-width: 1365px) {
