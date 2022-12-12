@@ -5,53 +5,21 @@ handle: "ngserena_02"
 layout: "infographic.njk"
 unlisted: true
 ---
-{% include "./page-head.njk" %}
+{% include "ngserena_02_page-head.njk" %}
 
 <body>
-  <main class="main">
-    <div padding="0px 0px">
-      <!-- 3. Put a description of your infographic in the alt tag (width = 1366) -->
+  <main class="main excellent-page">
+    <div class="inner">
       <img src="{{"/images/ngserena_02_excellent.png" | url}}" alt="Is College Worth it in the Long Run? Infographic" width="1425" z-index="2"> 
+      <a href="../bad/#bad" id="bad" class="btn" style="top: 3165px; left: 67px;"></a>
+      <a href="../alright/#alright" id="alright" class="btn" style="top: 3165px; left: 506px;"></a>
+      <a href="../excellent/#excellent" id="excellent" class="btn" style="top: 3165px; left: 943px;"></a>
+      <a href="../excellent-no/#no2" id="no2" class="btn" style="top: 5225px; left: 88px;"></a>
+      <a href="../alright-partially/#partially" id="partially" class="btn" style="top: 5225px; left: 520px;"></a>
+      <a href="../excellent-yes/#yes2" id="yes2" class="btn" style="top: 5225px; left: 960px;"></a>
     </div>
-  
-    <!-- Bad Selection Box -->
-    <a href="../bad/#bad" id="bad">
-      <div class="bad">
-      </div>
-    </a>
-  
-    <!-- Alright Selection Box -->
-    <a href="../alright/#alright">
-      <div class="alright" id="alright">
-      </div>
-    </a>
-  
-    <!-- Excellent Selection Box -->
-    <a href="../excellent/#excellent">
-      <div class="excellent" id="excellent">
-      </div>
-    </a>
-  
-    <!-- No Selection Box -->
-    <a href="../excellent-no/#no2" id="no2">
-      <div class="no2">
-      </div>
-    </a>
-  
-    <!-- Partially Selection Box -->
-    <a href="../alright-partially/#partially">
-      <div class="partially2" id="partially2">
-      </div>
-    </a>
-  
-    <!-- Yes Selection Box -->
-    <a href="../excellent-yes/#yes2">
-      <div class="yes2" id="yes2">
-      </div>
-    </a>
-  
   </main>
-{% include "./page-foot.njk" %}
+{% include "ngserena_02_page-foot.njk" %}
 <script>
 // custom javascript goes here
 </script>

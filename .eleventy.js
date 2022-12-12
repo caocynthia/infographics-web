@@ -15,7 +15,7 @@ module.exports = function (eleventyConfig) {
     return collectionApi.getFilteredByGlob("**/entertainment/**/*");
   });
   eleventyConfig.addCollection("fashion", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("**/money/**/*");
+    return collectionApi.getFilteredByGlob("**/fashion/**/*");
   });
   eleventyConfig.addCollection("food", function (collectionApi) {
     return collectionApi.getFilteredByGlob("**/food/**/*");
