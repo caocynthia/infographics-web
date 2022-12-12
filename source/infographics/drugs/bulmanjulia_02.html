@@ -10,10 +10,8 @@ layout: "infographic.njk"
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<!-- 1. Put the title of your infographic here -->
 <title>{{title}}</title>
 <style>
-/* 2. Update your background, if needed */
 body {
     color: #ffffff;
     background-color: #951f21; 
@@ -24,24 +22,20 @@ body {
 <body
 <main class="main">
   <div class="inner">
-    <!-- 3. Put a description of your infographic in the alt tag -->
     {% set url = ["/images/", handle,".png"] | join %}
     <img src="{{ url | url}}" alt="{{title}}">
   </div>
 </main>
 <footer class="footer">
   <div class="inner">
-    <!-- 4. Update your design credit -->
     <p><strong>Designer:</strong> Julia Bulman</p>
     <p><strong>Sources:</strong></p>
-    <!-- 5. Update your sources -->
     <ul class="sources">
       <li class="source_link"><a href="https://docs.google.com/document/d/1X0COnJeVfn3do8tC7vztVqdJKkce9UwR2N8_RcEvvCI/edit?usp=sharing">Read More!</a></li>
     </ul>
   </div>
 </footer>
 <script>
-// 6. Put custom javascript here, if needed
 </script>
 </body>
 </html>

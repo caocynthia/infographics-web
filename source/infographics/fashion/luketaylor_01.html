@@ -11,13 +11,11 @@ layout: "infographic.njk"
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- 1. Put the title of your infographic here -->
     <title>Diamonds - Consumption Infographic Collection</title>
-    <link rel="stylesheet" href="lib/common.css" />
+    <link rel="stylesheet" href="{{ '/styles/common.css' | url }}" />
     <style>
-      /* 2. Update your background, if needed */
       body {
-        background-color: #e6eff7; /* or use: rgb(0,255,0) */
+        background-color: #e6eff7; 
       }
     </style>
   </head>
@@ -29,7 +27,6 @@ layout: "infographic.njk"
         width="1366"
         style="margin: 0 auto; position: relative"
       >
-        <!-- 3. Put a description of your infographic in the alt tag -->
         <img
           src="{{ '/images/luketaylor_01_slice0.png' | url}}"
           alt="An infographic timeline detailling the history of how diamonds were sold over time and the advertising campaign involved."
@@ -60,10 +57,8 @@ layout: "infographic.njk"
     </main>
     <footer class="footer">
       <div class="inner">
-        <!-- 4. Update your design credit -->
         <p><strong>Designer:</strong> Luke Taylor</p>
         <p><strong>Sources:</strong></p>
-        <!-- 5. Update your sources -->
         <ul class="sources">
           <li class="source_link">
             Taylor III, Alexander L.
@@ -98,12 +93,12 @@ layout: "infographic.njk"
             Reuters, Nov 2011.
           </li>
           <li class="source_link">
-            Bain & Company.
+            Bain &amp; Company.
             <a
               href="https://www.bain.com/contentassets/dab98eb7f88c4bbf8b9c3e48b816c362/pr_bain_report_the_global_diamond_industry.pdf"
               >The Global Diamond Industry.</a
             >
-            Bain & Company, 2011.
+            Bain &amp; Company, 2011.
           </li>
           <li class="source_link">
             Sullivan, J. Courtney.
@@ -116,8 +111,6 @@ layout: "infographic.njk"
         </ul>
       </div>
     </footer>
-    <script>
-      // 6. Put custom javascript here, if needed
-    </script>
+    <script></script>
   </body>
 </html>

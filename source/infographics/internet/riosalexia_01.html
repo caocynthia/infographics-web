@@ -4,57 +4,62 @@ title: "How Would This Website Look?"
 handle: "riosalexia_01"
 layout: "infographic.njk"
 ---
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<!-- 1. Put the title of your infographic here -->
-<title>How Would This Website Look?</title>
-<link rel="stylesheet" href="lib/common.css" />
-<style>
-/* 2. Update your background, if needed */
-body {
-    background-color: #463f3a; /* or use: rgb(0,255,0) */
-    color: white;
-}
-p {
-color: white;
-}
-.source_link {
-color: white;
-}
-</style>
-</head>
-
-<body>
-<main class="main">
-  <div class="inner">
-    <!-- 3. Put a description of your infographic in the alt tag -->
-    {% set url = ["/images/", handle,".png"] | join %}
-    <img src="{{ "/images/riosalexia_01.png"| url}}" 
-    alt="This infographic shows the accessibility of information of websites from 1997-2002." width="1366">
-  </div>
-</main>
-<footer class="footer">
-  <div class="inner">
-    <!-- 4. Update your design credit -->
-    <p><strong>Designer:</strong> Alexia Rios</p>
-    <p><strong>Sources:</strong></p>
-    <!-- 5. Update your sources -->
-    <!--
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How Would This Website Look?</title>
+    <link rel="stylesheet" href="{{ '/styles/common.css' | url }}" />
+    <style>
+      body {
+        background-color: #463f3a;
+        color: white;
+      }
+      p {
+        color: white;
+      }
+      .source_link {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main">
+      <div class="inner">
+        <img
+          src="{{ '/images/riosalexia_01.png'| url}}"
+          alt="This infographic shows the accessibility of information of websites from 1997-2002."
+          width="1366"
+        />
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="inner">
+        <p><strong>Designer:</strong> Alexia Rios</p>
+        <p><strong>Sources:</strong></p>
+        <!--
       Valdes, Leo. n.d. “Un Enable - Special: Accessibility on the Internet.” United Nations. United Nations. Accessed October 12, 2022. https://www.un.org/esa/socdev/enable/disacc00.htm. 
 Hackett, Stephanie, Bambang Parmanto, and Xiaoming Zeng. 2004. “Accessibility of Internet Websites through Time: Proceedings of the 6th International ACM SIGACCESS Conference on Computers and Accessibility.” ACM Conferences. October 1, 2004. https://dl.acm.org/doi/abs/10.1145/1028630.1028638. 
     -->
-    <ul class="sources">
-      <li class="source_link"><a href="https://www.un.org/esa/socdev/enable/disacc00.htm">Valdes. Un Enable - Special: Access on the Internet. 1998.</a></li>
-      <li class="source_link"><a href="https://dl.acm.org/doi/abs/10.1145/1028630.1028638">Hackett, Parmanto, and Zeng. Accessibility of Internet Websites through Time: Proceedings of the 6th International ACM SIGACCESS Conference on Computers and Accessibility. 2004.</a></li>
-    </ul>
-  </div>
-</footer>
-<script>
-// 6. Put custom javascript here, if needed
-</script>
-</body>
+        <ul class="sources">
+          <li class="source_link">
+            <a href="https://www.un.org/esa/socdev/enable/disacc00.htm"
+              >Valdes. Un Enable - Special: Access on the Internet. 1998.</a
+            >
+          </li>
+          <li class="source_link">
+            <a href="https://dl.acm.org/doi/abs/10.1145/1028630.1028638"
+              >Hackett, Parmanto, and Zeng. Accessibility of Internet Websites
+              through Time: Proceedings of the 6th International ACM SIGACCESS
+              Conference on Computers and Accessibility. 2004.</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script></script>
+  </body>
 </html>
