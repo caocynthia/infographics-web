@@ -11,13 +11,11 @@ layout: "infographic.njk"
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- 1. Put the title of your infographic here -->
     <title>My Luxury Brand Infographic</title>
-    <link rel="stylesheet" href="lib/common.css" />
+    <link rel="stylesheet" href="{{ '/styles/common.css' | url }}" />
     <style>
-      /* 2. Update your background, if needed */
       body {
-        background-color: #000000; /* or use: rgb(0,255,0) */
+        background-color: #000000;
         color: #fff;
       }
     </style>
@@ -25,7 +23,6 @@ layout: "infographic.njk"
   <body>
     <main class="main">
       <div class="inner">
-        <!-- 3. Put a description of your infographic in the alt tag -->
         <img
           src="{{ '/images/wuyanyin_02.png' | url}}"
           alt="Describe your infographic"
@@ -35,10 +32,8 @@ layout: "infographic.njk"
     </main>
     <footer class="footer">
       <div class="inner">
-        <!-- 4. Update your design credit -->
         <p><strong>Designer:</strong> Yanyin Wu</p>
         <p><strong>Sources:</strong></p>
-        <!-- 5. Update your sources -->
         <ul class="sources">
           <li class="source_link">
             <a
@@ -90,8 +85,6 @@ layout: "infographic.njk"
         </ul>
       </div>
     </footer>
-    <script>
-      // 6. Put custom javascript here, if needed
-    </script>
+    <script></script>
   </body>
 </html>

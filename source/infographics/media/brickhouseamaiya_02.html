@@ -4,19 +4,18 @@ title: "Social Media Advertising in the United States"
 handle: "brickhouseamaiya_02"
 layout: "infographic.njk"
 ---
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- 1. Put the title of your infographic here -->
     <title>Social Media Advertising in the United States</title>
-    <link rel="stylesheet" href="lib/common.css" />
+    <link rel="stylesheet" href="{{ '/styles/common.css' | url }}" />
     <style>
-      /* 2. Update your background, if needed */
       body {
-        background-color: rgb(26, 26, 26); /* or use: rgb(0,255,0) */
+        background-color: rgb(26, 26, 26); 
         color: white;
       }
     </style>
@@ -24,20 +23,16 @@ layout: "infographic.njk"
   <body>
     <main class="main">
       <div class="inner">
-        <!-- 3. Put a description of your infographic in the alt tag -->
-        {% set url = ["/images/", handle,".png"] | join %}
-        <img src="{{ "/images/brickhouseamaiya_02.png" | url}}"
-          alt="Infographic about the prevalence of social media and the advertising on it via data visualization"
-          width="1366"
-        />
+        {% set url = ["/images/", handle,".png"] | join %} <img src="{{
+        "/images/brickhouseamaiya_02.png" | url}}" alt="Infographic about the
+        prevalence of social media and the advertising on it via data
+        visualization" width="1366" />
       </div>
     </main>
     <footer class="footer">
       <div class="inner">
-        <!-- 4. Update your design credit -->
         <p class="ptag"><strong>Designer:</strong> Amaiya Brickhouse</p>
         <p class="ptag"><strong>Sources:</strong></p>
-        <!-- 5. Update your sources -->
         <ul class="sources">
           <li class="source_link">
             <a
@@ -65,8 +60,6 @@ layout: "infographic.njk"
         </ul>
       </div>
     </footer>
-    <script>
-      // 6. Put custom javascript here, if needed
-    </script>
+    <script></script>
   </body>
 </html>

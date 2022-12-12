@@ -4,46 +4,48 @@ title: "Money of Matrimony | Data"
 handle: "chanmathena_02"
 layout: "infographic.njk"
 ---
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<!-- 1. Put the title of your infographic here -->
-<title>Money of Matrimony | Data</title>
-<link rel="stylesheet" href="lib/common.css" />
-<style>
-/* 2. Update your background, if needed */
-body {
-    background-color: #ffffff; /* or use: rgb(0,255,0) */
-}
-</style>
-</head>
-<body>
-<main class="main">
-  <div class="inner">
-    <!-- 3. Put a description of your infographic in the alt tag -->
-    <img src="{{'/images/chanmathena_02.png'|url}}" alt="Describe your infographic" width="1366">
-    <!-- <img src="images/SVG/Artboard 12.svg" alt="Describe your infographic" width="1366"> -->
-
-  </div>
-</main>
-<footer class="footer">
-  <div class="inner">
-    <!-- 4. Update your design credit -->
-    <p><strong>Designer:</strong> Mathena Chan</p>
-    <p><strong>Sources:</strong></p>
-    <!-- 5. Update your sources -->
-    <ul class="sources">
-      <li class="source_link"><a href="https://www.statista.com/statistics/1226472/countries-spending-the-most-on-weddings/">Statista | Countries spending the most on weddings as of 2019</a></li>
-      <li class="source_link"><a href="#">Source Name</a></li>
-      <li class="source_link"><a href="#">Source Name</a></li>
-    </ul>
-  </div>
-</footer>
-<script>
-// 6. Put custom javascript here, if needed
-</script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Money of Matrimony | Data</title>
+    <link rel="stylesheet" href="{{ '/styles/common.css' | url }}" />
+    <style>
+      body {
+        background-color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main">
+      <div class="inner">
+        <img
+          src="{{'/images/chanmathena_02.png'|url}}"
+          alt="Describe your infographic"
+          width="1366"
+        />
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="inner">
+        <p><strong>Designer:</strong> Mathena Chan</p>
+        <p><strong>Sources:</strong></p>
+        <ul class="sources">
+          <li class="source_link">
+            <a
+              href="https://www.statista.com/statistics/1226472/countries-spending-the-most-on-weddings/"
+              >Statista | Countries spending the most on weddings as of 2019</a
+            >
+          </li>
+          <li class="source_link"><a href="#">Source Name</a></li>
+          <li class="source_link"><a href="#">Source Name</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script>
+    </script>
+  </body>
 </html>
