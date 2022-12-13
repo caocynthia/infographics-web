@@ -148,6 +148,13 @@ body {
 .thumb img {
   width: 100%;
 }
+.thumb_designer {
+  text-transform: uppercase;
+  font-size: 0.75em;
+  letter-spacing: 1px;
+  line-height: 2em;
+  color: #999;
+}
 
 /* footer */
 .pagination-footer {
