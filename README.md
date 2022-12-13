@@ -4,7 +4,7 @@ This is the website compiling the semester-long research project of Todd Linkner
 
 In the first project, students explained aspects of consumption through illustrations and diagrams. In the second project, students developed data stories using visualization and diagramming to show the extent and impact of consumption.
 
-You can find the live site at [nu-info-desgin.github.io/Consumption/](https://nu-info-desgin.github.io/Consumption/).
+You can find the live site at [nu-info-design.github.io/Consumption/](https://nu-info-design.github.io/Consumption/).
 
 This site is built using the [eleventy (11ty)](https://github.com/11ty/eleventy) static site generator and the [Nunjucks templating engine](https://mozilla.github.io/nunjucks/). 
 
